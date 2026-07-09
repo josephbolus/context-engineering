@@ -8,9 +8,14 @@ You are tasked with creating git commits for the changes made during this sessio
 
 1. **Think about what changed:**
    - Review the conversation history and understand what was accomplished
+   - Inspect the working tree for sensitive files before initializing a repository, staging files, committing, or pushing
+   - Review `.gitignore` and the example environment file to ensure sensitive files are excluded from version control
+   - If a potentially sensitive file is already tracked, do not assume adding it to `.gitignore` is sufficient; explicitly identify it and stop before committing or pushing
    - Run `git status` to see current changes
    - Run `git diff` to understand the modifications
    - Consider whether changes should be one commit or multiple logical commits
+
+
 
 2. **Plan your commit(s):**
    - Identify which files belong together
